@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: content-box;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    height: 100vh;    
+    display: flex;   
+    justify-content: center;
+    margin: auto;
+    
+}
+
+nav{
+    position: fixed;
+    background-color: rgb(30, 24, 24);
+    border-bottom: 1px solid gray;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+     box-sizing: border-box;
+}
+
+nav a{
+    color: yellowgreen;
+    font-size: 1em;
+    margin: 5px;
+    text-decoration: none;
+   
+}
+
+nav a:hover{
+    font-size: 1.2em;   
+    color: yellow;
+     transition: 0.3s;
+}
+
+
+.container{        
+    display: flex;    
+    width: 70%;
+    margin: auto;
+
+}
+
+.cv{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.sedans{
+    background-color: #e28525;     
+}
+
+.cv div{
+    margin-top: 20px;
+}
+
+.suvs{
+    background-color: #016972;    
+}
+
+.luxury{
+    background-color: #00403f;    
+}
+
+.title{
+    color: white;
+    font-size: 32px;
+}
+
+.info{
+    color: white;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.learn-more{
+    width: 100%;      
+   padding-top: 30px;
+}
+
+.learn-more button{   
+    padding: 15px; 
+    /* width: 90%; */
+    border: 2px solid white;
+    border-radius: 50px;    
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+}
+
+@media screen and (max-width:750px){
+
+    .container{        
+        display: block;    
+        width: 70%;
+        margin: auto;
+    
+    }
+}
